@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 * {
 	margin: 0;
@@ -7,7 +7,7 @@
 }
 
 body {
-	font-family: "Montserrat", sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	overflow-x: hidden;
 }
 
@@ -18,6 +18,7 @@ header section {
 	background-color: #062A5C;
 	color: #FFFFFF;
 	padding: 0.5rem;
+	width: 100vw;
 }
 
 header section .contact-info {
@@ -140,10 +141,293 @@ header .nav nav ul li a:hover {
 form label input {
 	position: absolute;
 	top: 6%;
-	right: 5%;
-	width: 30%;
+	right: 9%;
+	width: 23%;
 	outline: none;
-	border: 5px solid #000000;
-	padding: 1rem;
+	border: 8px solid #333333;
+	padding: 0.8rem;
 	display: none;
 }
+
+main {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	background-image: url(../images/london.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	color: #FFFFFF;
+}
+
+main .welcome {
+	display: flex;
+	flex-direction: column;
+	width: 60%;
+	padding: 3rem;
+}
+
+main .welcome h1 {
+	font-size: 3rem;
+	font-weight: 900;
+	margin-bottom: 1rem;
+}
+
+main .welcome button {
+	font-size: 1rem;
+	font-weight: 600;
+	color: #FFFFFF;
+	padding: 1rem;
+	padding-inline: 2rem;
+	background: transparent;
+	border: 2px solid white;
+	border-radius: 30px;
+	width: fit-content;
+	transition: 1s all;
+}
+
+main .welcome button:hover {
+	color: white;
+	background-color: #062A5C;
+	border: 2px solid #062A5C;
+	cursor: pointer;
+}
+
+.main {
+	display: flex;
+	justify-content: center;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
+.main .back-content {
+	width: 82%;
+	background-image: url(../images/book.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.main .back-content .content {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	color: #FFFFFF;
+	background-color: rgba(255, 68, 0, 0.788);
+}
+
+.main .back-content .content .content-item {
+	padding: 3.5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: calc(100% / 3);
+}
+
+.main .back-content .content .content-item:nth-child(2) {
+	border-left: 1px solid #333333;
+}
+
+.main .back-content .content .content-item:nth-child(3) {
+	border-left: 1px solid #333333;
+}
+
+.main .back-content .content .content-item h2 {
+	font-size: 1.5rem;
+	font-weight: normal;
+	margin-bottom: 1rem;
+}
+
+.why-main {
+	width: 100%;
+	padding: 2rem;
+}
+
+.why-main .why {
+	width: 95%;
+	margin-inline: auto;
+}
+
+.why-main .why h2 {
+	font-size: 2.5rem;
+	font-weight: 900;
+	text-align: center;
+	margin-bottom: 1rem;
+}
+
+.why-main .why .why-items {
+	display: flex;
+	justify-content: center;
+}
+
+.why-main .why .why-items .item {
+	display: flex;
+	align-items: center;
+	padding: 1rem;
+	width: calc(100% / 3);
+}
+
+.why-main .why .why-items .item .left {
+	padding: 1rem;
+}
+
+.why-main .why .why-items .item .left i {
+	background-color: #062A5C;
+	padding: 1.5rem;
+	outline: 0.5px dashed #062A5C;
+	outline-offset: 2px;
+	border-radius: 50%;
+	font-size: 1.5rem;
+	color: #FFFFFF;
+}
+
+.why-main .why .why-items .item .right h2 {
+	font-size: 1.5rem;
+	font-size: 700;
+	margin-bottom: 1rem;
+	text-align: left;
+}
+
+.why-main .why .why-items .item .right p {
+	color: #524F4F;
+}
+
+.services-main {
+	background-color: #F5F5F5;
+	padding: 2rem;
+	margin-top: 2rem;
+}
+
+.services-main h2 {
+	font-size: 2.5rem;
+	font-weight: 900;
+	text-align: center;
+	margin-bottom: 1rem;
+}
+
+.services .services-items {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.services .services-items .services-item {
+	width: 300px;
+	height: 400px;
+	background-color: #FFFFFF;
+	margin: 1rem;
+	box-shadow: 5px 5px 10px #333333;
+}
+
+.services .services-items .services-item h2 {
+	font-size: 1.1rem;
+	padding-left: 1rem;
+	text-align: left;
+}
+
+.services .services-items .services-item .img-general {
+	width: 300px;
+	height: 350px;
+	background-image: url(../images/general.jpeg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-bottom: 0.5rem;
+	position: relative;
+}
+
+.services .services-items .services-item .img-general span {
+	background-color: #062A5C;
+	color: #FFFFFF;
+	font-size: 0.8rem;
+	font-weight: 900;
+	padding: 0.5rem;
+	position: absolute;
+	top: 2%;
+}
+
+.services .services-items .services-item .img-russian {
+	width: 300px;
+	height: 350px;
+	background-image: url(../images/russian.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-bottom: 0.5rem;
+	position: relative;
+}
+
+.services .services-items .services-item .img-russian span {
+	background-color: #062A5C;
+	color: #FFFFFF;
+	font-size: 0.8rem;
+	font-weight: 900;
+	padding: 0.5rem;
+	position: absolute;
+	top: 2%;
+}
+
+.services .services-items .services-item .img-german {
+	width: 300px;
+	height: 350px;
+	background-image: url(../images/germany.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-bottom: 0.5rem;
+	position: relative;
+}
+
+.services .services-items .services-item .img-german span {
+	background-color: #062A5C;
+	color: #FFFFFF;
+	font-size: 0.8rem;
+	font-weight: 900;
+	padding: 0.5rem;
+	position: absolute;
+	top: 2%;
+}
+
+.services .services-items .services-item .img-ielts {
+	width: 300px;
+	height: 350px;
+	background-image: url(../images/ielts.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-bottom: 0.5rem;
+	position: relative;
+}
+
+.services .services-items .services-item .img-ielts span {
+	background-color: #062A5C;
+	color: #FFFFFF;
+	font-size: 0.8rem;
+	font-weight: 900;
+	padding: 0.5rem;
+	position: absolute;
+	top: 2%;
+}
+
+.services .services-items .services-item .img-cambridge {
+	width: 300px;
+	height: 350px;
+	background-image: url(../images/cambridge.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-bottom: 0.5rem;
+	position: relative;
+}
+
+.services .services-items .services-item .img-cambridge span {
+	background-color: #062A5C;
+	color: #FFFFFF;
+	font-size: 0.8rem;
+	font-weight: 900;
+	padding: 0.5rem;
+	position: absolute;
+	top: 2%;
+}
+
