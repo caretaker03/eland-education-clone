@@ -22,7 +22,7 @@ header section {
 }
 
 header section .contact-info {
-	width: 42%;
+	width: 36%;
 }
 
 header section .contact-info ul {
@@ -30,6 +30,7 @@ header section .contact-info ul {
 	justify-content: space-between;
 	align-items: center;
 	list-style: none;
+	font-size: 0.8rem;
 }
 
 header section .social-media-icons {
@@ -198,7 +199,6 @@ main .welcome button:hover {
 	display: flex;
 	justify-content: center;
 	margin-top: 2rem;
-	margin-bottom: 2rem;
 }
 
 .main .back-content {
@@ -237,6 +237,7 @@ main .welcome button:hover {
 	font-size: 1.5rem;
 	font-weight: normal;
 	margin-bottom: 1rem;
+	text-align: center;
 }
 
 .why-main {
@@ -253,7 +254,8 @@ main .welcome button:hover {
 	font-size: 2.5rem;
 	font-weight: 900;
 	text-align: center;
-	margin-bottom: 1rem;
+	margin-top: 1rem;
+	margin-bottom: 2rem;
 }
 
 .why-main .why .why-items {
@@ -291,19 +293,22 @@ main .welcome button:hover {
 
 .why-main .why .why-items .item .right p {
 	color: #524F4F;
+	text-align: left;
 }
 
 .services-main {
 	background-color: #F5F5F5;
 	padding: 2rem;
 	margin-top: 2rem;
+	width: 100vw;
 }
 
 .services-main h2 {
 	font-size: 2.5rem;
 	font-weight: 900;
 	text-align: center;
-	margin-bottom: 1rem;
+	margin-top: 1rem;
+	margin-bottom: 2rem;
 }
 
 .services .services-items {
@@ -314,14 +319,15 @@ main .welcome button:hover {
 
 .services .services-items .services-item {
 	width: 300px;
-	height: 400px;
+	height: 410px;
 	background-color: #FFFFFF;
 	margin: 1rem;
-	box-shadow: 5px 5px 10px #333333;
+	box-shadow: 0px 0px 10px gray;
 }
 
 .services .services-items .services-item h2 {
 	font-size: 1.1rem;
+	margin-top: 0.5rem;
 	padding-left: 1rem;
 	text-align: left;
 }
@@ -431,3 +437,274 @@ main .welcome button:hover {
 	top: 2%;
 }
 
+.main-content {
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	background-image: url(../images/book.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.main-content .main-back {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	background-color: #062a5cc7;
+}
+
+.main-content .main-back .cont {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 100%;
+}
+
+.main-content .main-back .cont .cont-item {
+	width: calc(100% / 4);
+	color: #FFFFFF;
+	padding: 3rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.main-content .main-back .cont .cont-item i {
+	font-size: 4rem;
+}
+
+.main-content .main-back .cont .cont-item h2 {
+	font-size: 3rem;
+	font-weight: 900;
+}
+
+.main-content .main-back .cont .cont-item p {
+	text-align: center;
+}
+
+.meetus {
+	display: flex;
+	flex-direction: column;
+	background-color: #F5F5F5;
+	padding: 3rem;
+	width: 100vw;
+}
+
+.meetus h2 {
+	font-size: 2.5rem;
+	font-weight: 900;
+	text-align: center;
+	margin-bottom: 2rem;
+}
+
+.meetus .meet-items {
+	display: flex;
+	justify-content: space-around;
+}
+
+.meetus .meet-items .meet-item {
+	width: 350px;
+	height: 460px;
+	box-shadow: 0px 0px 10px gray;
+}
+
+.meetus .meet-items .meet-item .meet-img-first, .meet-img-second, .meet-img-third {
+	width: 350px;
+	height: 400px;
+}
+
+.meetus .meet-items .meet-item .meet-img-first {
+	background-image: url(../images/elmar.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.meetus .meet-items .meet-item .meet-img-second {
+	background-image: url(../images/nabat.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.meetus .meet-items .meet-item .meet-img-third {
+	background-image: url(../images/vafa.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.meetus .meet-items .meet-item h3 {
+	transition: 1s all;
+	cursor: pointer;
+	margin-top: 0.5rem;
+}
+
+.meetus .meet-items .meet-item h3:hover {
+	color: #062A5C
+}
+
+.meetus .meet-items .meet-item h3, p {
+	text-align: center;
+}
+
+.students-main {
+	width: 100vw;
+	background-color: #F5F5F5;
+	background-image: url(../images/book.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.students-main .students-back {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #062a5cc7;
+	padding: 2rem;
+}
+
+.students-main .students-back h2 {
+	font-size: 3rem;
+	font-weight: 900;
+	text-align: center;
+	margin-top: 1rem;
+	margin-bottom: 2rem;
+	color: #FFFFFF;
+}
+
+.students-main .student-back .students {
+	width: 90%;
+	display: flex;
+	justify-content: center;
+}
+
+.student-main .student-back .students .student {
+	width: calc(90% / 2);
+	width: 500px;
+}
+
+.students-content {
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	background-image: url(../images/eland-edu.jpeg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.students-content h2 {
+	font-size: 3rem;
+	font-weight: 900;
+	text-align: center;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	color: #FFFFFF;
+	background: none;
+}
+
+.students-content .students-back-first {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #062a5cc7;
+}
+
+.students-content .students-back .students {
+	padding: 2rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 100%;
+}
+
+.students-content .students-back .students .student {
+	width: calc(90% / 2);
+	background-color: #FFFFFF;
+	padding: 3rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.students-content .students-back .students .student img {
+	display: block;
+	text-align: center;
+	border: none;
+	border-radius: 50%;
+	margin-bottom: 1rem;
+}
+
+.students-content .students-back .students .student h2 {
+	font-size: 1.5rem;
+	font-weight: 900;
+	margin-bottom: 1rem;
+	color: #000000;
+}
+
+.students-content .students-back .students .student span {
+	color: gray;
+}
+
+.students-content .students-back .students .student p {
+	text-align: center;
+	margin-top: 1rem;
+}
+
+.main-test {
+	display: flex;
+	justify-content: center;
+	background-image: url(../images/book.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.main-test .test-back {
+	padding: 3rem;
+	width: 100%;
+	background-color: rgba(255, 68, 0, 0.788);
+}
+
+.main-test .test-back .test-content {
+	color: #FFFFFF;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.main-test .test-back .test-content h2 {
+	font-size: 2.5rem;
+	font-weight: 900;
+	text-align: center;
+	margin-bottom: 1rem;
+}
+
+.main-test .test-back .test-content button {
+	font-size: 1rem;
+	font-weight: 600;
+	color: #FFFFFF;
+	padding: 1rem;
+	padding-inline: 2rem;
+	background: transparent;
+	border: 2px solid white;
+	border-radius: 30px;
+	width: fit-content;
+	transition: 1s all;
+	text-align: center;
+	margin-top: 1rem;
+}
+
+.main-test .test-back .test-content button:hover {
+	color: #062A5C;
+	background-color: #FFFFFF;
+	border: 2px solid #FFFFFF;
+	cursor: pointer;
+}
