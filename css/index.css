@@ -659,6 +659,7 @@ main .welcome button:hover {
 }
 
 .main-test {
+	width: 100%;
 	display: flex;
 	justify-content: center;
 	background-image: url(../images/book.jpg);
@@ -707,4 +708,61 @@ main .welcome button:hover {
 	background-color: #FFFFFF;
 	border: 2px solid #FFFFFF;
 	cursor: pointer;
+}
+
+.footer {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	color: #BEBEBE;
+}
+
+.footer .top {
+	width: 100%;
+	padding: 2rem;
+	background-color: #1F1F1F;
+	display: flex;
+	justify-content: space-around;
+}
+
+.footer .top .footer-left {
+	width: 25%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.footer .top .footer-right {
+	width: 25%;
+}
+
+.footer .top h2 {
+	margin-bottom: 1rem;
+}
+
+.footer .top .footer-right ul {
+	display: flex;
+	flex-direction: column;
+}
+
+.footer .top .footer-right ul li {
+	list-style: none;
+	margin-block: 0.3rem;
+}
+
+.footer .top .footer-right ul li a {
+	text-decoration: none;
+	color: #BEBEBE;
+	transition: 1s all;
+}
+
+.footer .top .footer-right ul li a:hover {
+	color: #F5F5F5;
+}
+
+.footer .bottom {
+	width: 100%;
+	background-color: #191919;
+	padding: 1rem;
+	text-align: center;
 }
